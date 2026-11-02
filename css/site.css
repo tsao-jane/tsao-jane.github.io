@@ -28,7 +28,7 @@ a{color:inherit}
 p{margin:0 0 1em}
 
 /* ---------- top bar ---------- */
-.bar{display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:17px;flex-wrap:wrap;padding-top:28px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:17px;flex-wrap:wrap;padding-top:28px;position:relative;z-index:6}
 .bar .home{text-decoration:none;font-family:"Dela",sans-serif;font-size:22px;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:10px}
 .bar .home img{width:38px;height:auto}
 .logo-eyes{display:inline-flex;gap:3px;align-items:flex-end;transform:rotate(-4deg);transition:transform .25s var(--ease-pop)}
