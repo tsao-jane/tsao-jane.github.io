@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>From a week to a day per vendor update — Jane Tsao</title>
+<meta name="description" content="How Jane Tsao built an AI-assisted product-import pipeline for five vendor lines feeding a 5,500+ product catalog, and what she still checks by hand.">
+<link rel="icon" href="../assets/stickers/mascot.webp" type="image/webp">
+<link rel="stylesheet" href="../css/site.css">
+<style>
+.sub-hero .side{right:calc(var(--gutter) + 10px);top:60px;width:clamp(130px,16vw,240px)}
+.sub-hero .sheet{right:calc(var(--gutter) + 10px);top:76px;width:115px}
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px;counter-reset:p}
+.pipe li{list-style:none;counter-increment:p;border-radius:28px;padding:22px 22px 24px;position:relative;box-shadow:0 10px 0 -2px var(--ink);font-size:17px;line-height:1.4}
+.pipe li::before{content:counter(p);display:block;font:400 44px/1 "Dela",sans-serif;margin-bottom:14px}
+.pipe li b{display:block;font:400 22px/1.1 "Dela",sans-serif;margin-bottom:8px}
+.pipe .ai{background:var(--white)}.pipe .me{background:var(--lime)}
+.pipe li .who{position:absolute;top:18px;right:18px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--ink);color:var(--lime);padding:5px 9px;border-radius:999px}
+.pipe .ai .who{background:var(--violet);color:#fff}
+@media (max-width:1100px){.pipe{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.sub-hero .sheet{display:none}.pipe{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="sub-hero grid">
+  <div class="bar">
+    <a class="home" href="../index.html"><span class="logo-eyes" aria-hidden="true"><span class="eye"><span class="pupil"></span></span><span class="eye"><span class="pupil"></span></span></span>Jane Tsao</a>
+    <a class="chip" href="mailto:tsaojane615@yahoo.com">tsaojane615@yahoo.com</a>
+  </div>
+  <div class="side mascot" data-parallax="0.12">
+    <img src="../assets/stickers/mascot.webp" alt="A friendly fanless industrial computer mascot, waving" width="640" height="582">
+    <span class="eye l"><span class="pupil"></span></span>
+    <span class="eye r"><span class="pupil"></span></span>
+  </div>
+  <div class="sticker sheet hoverable float hide-sm" data-parallax="0.2"><img src="../assets/stickers/sheet.webp" alt="" width="640" height="617"></div>
+  <span class="kicker">Case study · Product data</span>
+  <h1>From about a <span class="hl">week</span> to a <span class="hl">day</span> per vendor update</h1>
+  <p class="lede">The storefront carries a catalog of 5,500+ visible products, synced through NetSuite. Keeping it current used to mean a week of manual entry per vendor update. I built an AI-assisted import pipeline for five vendor lines that crawls and formats the data, and leaves the judgement calls to me.</p>
+  <div class="logowall onpage" role="img" aria-label="Vendor lines: Moxa, Cincoze, Neousys, ASUS IoT, Advantech" data-reveal="pop">
+    <span><img src="../assets/logos/moxa.svg" alt="" width="120" height="34"></span>
+    <span><img src="../assets/logos/cincoze.svg" alt="" width="120" height="30"></span>
+    <span><img src="../assets/logos/neousys.webp" alt="" width="120" height="30"></span>
+    <span><img src="../assets/logos/asus-iot.png" alt="" width="140" height="25"></span>
+    <span><img src="../assets/logos/advantech.svg" alt="" width="130" height="28"></span>
+  </div>
+  <p class="hand">“a week to a day” is my own estimate, and I’ll show you how I check it</p>
+  <ul class="facts">
+    <li><em>5</em> vendor lines</li>
+    <li><em>5,500+</em> visible products</li>
+    <li>~1 week → <em>1 day</em> per update (my estimate)</li>
+    <li>Packaged as reusable <em>Claude Skills</em></li>
+  </ul>
+</header>
+
+<main id="main">
+<section class="band">
+  <h2 class="h2" data-reveal="up">The pipeline</h2>
+  <p class="hand sub" style="color:var(--violet)" data-reveal="up">crawl, format, check, import</p>
+  <ol class="pipe">
+    <li class="ai" data-reveal="tilt"><span class="who">AI-assisted</span><b>Crawl the vendor site</b>Product pages, specs, images and datasheet links are collected per vendor.</li>
+    <li class="ai" data-reveal="tilt"><span class="who">AI-assisted</span><b>Format to the vendor’s CSV</b>Each vendor has its own column layout and spec rules; the data is shaped to fit it.</li>
+    <li class="me" data-reveal="tilt"><span class="who">Me</span><b>Check</b>Spec parsing rules, dead-link checks, and the call on whether a change is a revision or a new product.</li>
+    <li class="me" data-reveal="tilt"><span class="who">Me</span><b>Import</b>The checked file goes into the product CMS and syncs to the storefront.</li>
+  </ol>
+  <p class="prose" style="margin-top:34px" data-reveal="up">Around the pipeline sit 15 small single-purpose Python scripts: link checks, image fetching, spec fixes, and a safe spreadsheet rebuild. One Cincoze run in August 2026 covered 107 products.</p>
+</section>
+
+<section class="band lime">
+  <h2 class="h2" data-reveal="up">Numbers</h2>
+  <div class="stats">
+    <div class="stat paper" data-reveal="tilt"><b><span data-count="5550" data-comma>5,550</span></b><p>visible products in the catalog the pipeline feeds.</p><p class="fine">BigCommerce control panel, read September 10, 2026</p></div>
+    <div class="stat" data-reveal="tilt"><b>1 wk → 1 day</b><p>per vendor product update, across five vendor lines.</p><p class="fine">My own estimate. Before: about a week of manual entry; after: about a day including the hand check.</p></div>
+    <div class="stat coral" data-reveal="tilt"><b><span data-count="107">107</span></b><p>products in one Cincoze run, August 2026.</p><p class="fine">Run files dated August 27 to 28, 2026</p></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="two">
+    <div class="panel" data-reveal="left">
+      <h3>What AI does</h3>
+      <ul>
+        <li>Collects product data from vendor pages instead of someone retyping it.</li>
+        <li>Shapes it into each vendor’s CSV layout.</li>
+        <li>Drafts the repetitive parts so I spend my time on exceptions.</li>
+      </ul>
+    </div>
+    <div class="panel lime" data-reveal="right">
+      <h3>What I still check by hand</h3>
+      <ul>
+        <li>Spec parsing rules: a wrong unit or a mangled SKU is worse than a missing one.</li>
+        <li>Dead links and missing images before anything is imported.</li>
+        <li>Revision versus rename: whether a vendor change is the same product or a new one.</li>
+        <li>Anything that touches price. I prepare the NetSuite import files that set up new vendor items and update purchase and list prices from vendor price lists.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel violet" style="margin-top:28px" data-reveal="up">
+    <h3>So the method survives me</h3>
+    <p style="margin:0">I packaged the vendor price-update and product-knowledge methods as reusable Claude Skills, so the next person can run the same steps with the same checks.</p>
+  </div>
+</section>
+</main>
+
+<nav class="next" aria-label="Next case">
+  <span class="hand" style="font-size:26px;color:var(--violet)">next up</span>
+  <a class="big" href="ai-workshop.html">A company-wide AI workshop <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</nav>
+
+<footer id="contact">
+  <h2 class="h2" data-reveal="up">Let’s talk before I land.</h2>
+  <div class="links" data-reveal="up">
+    <a class="btn" href="mailto:tsaojane615@yahoo.com">tsaojane615@yahoo.com</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/jane-t-042913220" rel="noopener">LinkedIn profile</a>
+  </div>
+</footer>
+
+<nav class="pill" aria-label="Site"><a href="../index.html">Home</a><a href="../index.html#work" aria-current="page">Work</a><a href="../about.html">About</a><a href="#contact">Contact</a></nav>
+
+<script src="../vendor/gsap.min.js"></script>
+<script src="../vendor/ScrollTrigger.min.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>
