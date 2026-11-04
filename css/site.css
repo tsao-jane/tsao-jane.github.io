@@ -322,7 +322,7 @@ html.js .reveal-wait{visibility:visible}
   .note{margin-top:30px}
   .nums{padding:0 16px 64px;grid-template-columns:1fr;gap:14px}
   footer{padding-top:56px;padding-bottom:130px}
-  .pill{font-size:14.5px;bottom:12px;padding:5px}.pill a{padding:9px 10px}
+  .pill{font-size:12.5px;bottom:12px;padding:4px;gap:2px;flex-wrap:wrap;justify-content:center;border-radius:24px;width:max-content;max-width:calc(100vw - 16px)}.pill a{padding:7px 7px}.pill a[href="#top"]{display:none}
   .sub-hero .side{position:relative;right:auto;top:auto;width:130px;margin:20px 0 0 auto}
   .sub-hero .kicker{margin-top:26px}
   .two,.canada{grid-template-columns:1fr}
