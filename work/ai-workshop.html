@@ -11,7 +11,7 @@
 <style>
 .sub-hero .easel{right:calc(var(--gutter) + 20px);top:60px;width:clamp(120px,15vw,220px)}
 .sub-hero .sp1{left:50%;top:70px;width:28px}
-.deckcard{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center;margin-top:30px}
+.deckcard{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:36px;align-items:center;margin-top:30px}
 .deckcard .shotcard img{aspect-ratio:16/10}
 @media (max-width:860px){.sub-hero .easel{position:relative;right:auto;top:auto;width:120px;margin:16px 0 0 auto}.deckcard{grid-template-columns:1fr}}
 </style>
@@ -26,39 +26,36 @@
   <div class="sticker easel hoverable float" data-parallax="0.15"><img src="../assets/stickers/easel.webp" alt="" width="597" height="640"></div>
   <div class="spark sp1 twinkle hide-sm" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 2c2 10 8 16 18 18-10 2-16 8-18 18-2-10-8-16-18-18 10-2 16-8 18-18z" fill="currentColor" stroke="#10294F" stroke-width="3" stroke-linejoin="round"/></svg></div>
   <span class="kicker">Case study · Teaching</span>
-  <h1>A <span class="hl">company-wide</span> AI workshop</h1>
+  <h1 style="max-width:none;font-size:clamp(36px,4.3vw,62px)">A <span class="hl" style="white-space:nowrap">company-wide</span> AI workshop</h1>
   <p class="lede">Three live online sessions for the whole company, across the Taiwan and US teams. I planned and taught all three myself, built the QR check-in form, and asked everyone to rate how useful each session was.</p>
   <p class="hand">teaching colleagues in two time zones, in English and Mandarin</p>
   <ul class="facts">
     <li><em>3</em> live sessions</li>
     <li>~<em>15</em> people, Taiwan and the US</li>
     <li>Usefulness <em>4.5 / 5</em></li>
-    <li><em>13 of 15</em> rated it 4 or 5</li>
   </ul>
 </header>
 
 <main id="main">
 <section class="band violet">
-  <h2 class="h2" data-reveal="up">The deck</h2>
-  <p class="hand sub" data-reveal="up">session 3: your AI toolkit</p>
+  <h2 class="h2" data-reveal="up">The three sessions</h2>
+  <p class="hand sub" data-reveal="up">one way of working with Claude per session</p>
   <div class="deckcard">
     <figure class="shotcard" style="margin:0;cursor:default" data-reveal="tilt">
       <img src="../assets/lp/deck3.webp" alt="Opening slide of the Session 3 deck: Your AI toolkit. Cowork, Skills, and Connectors, and where to actually start on Monday" width="1000" height="625">
-      <figcaption class="cap"><span>Session 3 deck<small>Built as a web page, 21 slides</small></span></figcaption>
+      <figcaption class="cap"><span>The deck<small>Built as a web page, 21 slides</small></span></figcaption>
     </figure>
     <div class="prose" data-reveal="right">
-      <p>Session 3 was the practical one: Cowork, Skills and Connectors, and where to actually start on Monday. I built the deck as a web page so colleagues could open it in the browser, no login or software needed.</p>
-      <p style="margin:0" class="fine">The deck itself stays internal — it’s company material. Happy to walk through it in an interview.</p>
+      <p>Each session tackled one way of working with Claude: Projects in the chat box (Session 1), Claude working in your browser (Session 2), and Cowork running on your computer (Session 3). I built the decks as web pages so colleagues could open them in the browser, no login or software needed.</p>
     </div>
   </div>
 </section>
 
 <section class="band">
   <h2 class="h2" data-reveal="up">What people said</h2>
-  <div class="stats">
-    <div class="stat lime" data-reveal="tilt"><b><span data-count="4.5" data-decimals="1" data-suffix="/5">4.5/5</span></b><p>average usefulness rating across the sessions.</p><p class="fine">Check-in form, read October 5, 2026</p></div>
-    <div class="stat coral" data-reveal="tilt"><b><span data-count="3">3</span></b><p>live sessions, each with its own hands-on exercise and QR check-in.</p><p class="fine">Check-in form, read October 5, 2026</p></div>
-    <div class="stat paper" data-reveal="tilt"><b><span data-count="87" data-suffix="%">87%</span></b><p>of check-ins rated the sessions 4 or 5 out of 5.</p><p class="fine">Check-in form, read October 5, 2026</p></div>
+  <div class="stats" style="grid-template-columns:1fr 1fr">
+    <div class="stat lime" data-reveal="tilt"><b><span data-count="4.5" data-decimals="1" data-suffix="/5">4.5/5</span></b><p>average usefulness rating in the check-in form, across the three sessions.</p></div>
+    <div class="stat coral" data-reveal="tilt"><b><span data-count="3">3</span></b><p>live sessions, each with its own hands-on exercise and QR check-in.</p></div>
   </div>
   <p class="hand" style="font-size:25px;color:var(--violet);margin:40px 0 0" data-reveal="up">and in their own words, verbatim from the check-in form</p>
   <div class="quotes">

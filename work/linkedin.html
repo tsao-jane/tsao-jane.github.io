@@ -12,12 +12,8 @@
 .sub-hero .mega{right:calc(var(--gutter) + 20px);top:70px;width:clamp(120px,15vw,220px)}
 .sub-hero .sp1{left:52%;top:70px;width:30px}
 .covers .sp2{right:12%;top:30px;width:26px}
-.receipts .shotcard img{aspect-ratio:auto;object-fit:contain;background:#fff}
 .receipts .gallery{align-items:start}
-.receipts .shotcard{cursor:default}
-.receipts .stats{margin-top:34px}
-.receipts > .fine{margin-top:18px}
-@media (max-width:860px){.sub-hero .mega{position:relative;right:auto;top:auto;width:120px;margin:16px 0 0 auto}}
+@media (max-width:860px){.sub-hero .mega{position:relative;right:auto;top:auto;width:120px;margin:16px 0 0 auto}.sub-hero h1 br{display:none}}
 </style>
 </head>
 <body>
@@ -30,7 +26,7 @@
   <div class="sticker mega hoverable float" data-parallax="0.15"><img src="../assets/stickers/megaphone.webp" alt="" width="640" height="619"></div>
   <div class="spark sp1 twinkle hide-sm" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 2c2 10 8 16 18 18-10 2-16 8-18 18-2-10-8-16-18-18 10-2 16-8 18-18z" fill="currentColor" stroke="#10294F" stroke-width="3" stroke-linejoin="round"/></svg></div>
   <span class="kicker">Case study · LinkedIn</span>
-  <h1>LinkedIn for an <span class="hl">industrial-computing</span> brand</h1>
+  <h1 style="max-width:none;font-size:clamp(36px,4.6vw,66px)">LinkedIn for an<br><span class="hl" style="white-space:nowrap">industrial-computing</span> brand</h1>
   <p class="lede">I run the company’s industrial-computing showcase page and a persona account that covers industrial AI news. Every post goes through the same loop: research from fresh sources, draft, visuals, approval, scheduling, and a read-back check once it is live.</p>
   <p class="hand">application stories, not spec sheets</p>
   <ul class="facts">
@@ -44,9 +40,9 @@
 <main id="main">
 <section class="band violet covers">
   <div class="spark sp2 lime twinkle hide-sm" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 2c2 10 8 16 18 18-10 2-16 8-18 18-2-10-8-16-18-18 10-2 16-8 18-18z" fill="currentColor" stroke="#10294F" stroke-width="3" stroke-linejoin="round"/></svg></div>
-  <h2 class="h2" data-reveal="up">What a post looks like</h2>
+  <h2 class="h2" data-reveal="up">The showcase page</h2>
   <p class="hand sub" data-reveal="up">one product, one real deployment scene</p>
-  <p class="prose" data-reveal="up">Showcase posts put the featured hardware inside the place it would actually work: a battery cabinet, a refinery, an airport e-gate. The cover carries the scene; the caption explains the job the computer does there. These three covers are mine.</p>
+  <p class="prose" style="max-width:none" data-reveal="up">Showcase posts put the featured hardware inside the place it would actually work: a battery cabinet, a refinery, an airport e-gate. The cover carries the scene; the caption explains the job the computer does there. These three covers are mine.</p>
   <div class="gallery">
     <a class="shotcard" href="https://www.linkedin.com/showcase/neteon-ipc" rel="noopener" data-reveal="tilt">
       <img src="../assets/cover-moxa.webp" alt="Post cover: Local Energy Management for Cabinet BESS. A Moxa BXP-A101 edge computer in front of battery storage cabinets at sunset" width="1200" height="675">
@@ -60,6 +56,36 @@
       <img src="../assets/cover-mic.webp" alt="Post cover: Inside an Airport E-Gate. An Advantech MIC-770 V3 computer beside a row of airport border-control gates" width="1200" height="675">
       <span class="cap"><span>Border control<small>Airport e-gates, Advantech MIC-770 V3</small></span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
     </a>
+  </div>
+  <div style="display:flex;gap:140px;flex-wrap:wrap;margin-top:36px" data-reveal="up">
+    <div class="achnum" style="margin:0"><b style="color:var(--lime)">7,694</b><p>organic impressions in 2026 so far</p></div>
+    <div class="achnum" style="margin:0"><b style="color:var(--coral)">48</b><p>followers — 31 of them gained this year</p></div>
+  </div>
+  <p class="fine" style="opacity:.38;font-size:13.5px" data-reveal="up">Showcase analytics export, 2026 year to date.</p>
+</section>
+
+<section class="band receipts" style="background:#FFF4D9">
+  <h2 class="h2" data-reveal="up">The persona account</h2>
+  <p class="hand sub" style="color:var(--violet)" data-reveal="up">reach from relevance, not follower count</p>
+  <p class="prose" style="max-width:none" data-reveal="up">I created and run this account for industrial-AI news. It has 230 followers, yet its posts travel on relevance — screenshots as LinkedIn shows them, account name cropped. Tap to enlarge.</p>
+  <div class="receipt-row">
+    <div class="receipts-mini">
+      <a href="../assets/post-caterpillar.webp" target="_blank" rel="noopener" data-reveal="tilt">
+        <img src="../assets/post-caterpillar.webp" alt="Screenshot of the Caterpillar × FieldAI post with 2,601 impressions and 26 reactions" width="552" height="1360">
+        <span class="cap">Caterpillar ✕ FieldAI<small>2,601 impressions · 26 reactions · 1 repost</small></span>
+      </a>
+      <a href="../assets/post-siemens.webp" target="_blank" rel="noopener" data-reveal="tilt">
+        <img src="../assets/post-siemens.webp" alt="Screenshot of the Siemens × NVIDIA post with 2,572 impressions and 47 reactions" width="552" height="1062">
+        <span class="cap">Siemens ✕ NVIDIA<small>2,572 impressions · 47 reactions · 5 reposts</small></span>
+      </a>
+    </div>
+    <div class="ach" data-reveal="right">
+      <p class="hand" style="font-size:25px;color:var(--violet);margin:0 0 6px">what it adds up to</p>
+      <div class="achnum"><b style="color:var(--violet)">8,331</b><p>impressions in the last 90 days</p></div>
+      <div class="achnum"><b style="color:#C2457A">92%</b><p>of that reach came from outside its network</p></div>
+      <div class="achnum"><b>+229%</b><p>impressions vs. the prior 90 days</p></div>
+      <p class="fine" style="margin-top:16px">Per-post counts as the posts display them; 90-day figures from LinkedIn analytics, read November 2, 2026.</p>
+    </div>
   </div>
 </section>
 
@@ -75,37 +101,6 @@
     <li class="me" data-reveal="pop"><b>Read-back check</b>After it goes live, I re-read the post as a reader would and fix what is off.</li>
   </ol>
   <div class="legend" aria-hidden="true"><span><i style="background:var(--lime)"></i>My decision</span><span><i style="background:#fff"></i>AI-assisted, I review</span></div>
-</section>
-
-<section class="band white receipts">
-  <h2 class="h2" data-reveal="up">Two posts, with the receipts</h2>
-  <p class="hand sub" style="color:var(--violet)" data-reveal="up">reach from relevance, not follower count</p>
-  <p class="prose" data-reveal="up">The persona account has 230 followers, yet 92% of its 8,331 impressions in the last 90 days came from outside its own network. These are its two best posts in that window, screenshots as LinkedIn shows them, with the account name and avatar cropped.</p>
-  <div class="gallery two-up">
-    <figure class="shotcard" style="margin:0" data-reveal="tilt">
-      <img src="../assets/post-caterpillar.webp" alt="Screenshot of a LinkedIn post about the Caterpillar and FieldAI physical-AI collaboration, with its infographic cover, 26 reactions and 2,601 impressions" width="552" height="1360">
-      <figcaption class="cap"><span>Caterpillar ✕ FieldAI<small>2,601 impressions · 26 reactions · 1 repost</small></span></figcaption>
-    </figure>
-    <figure class="shotcard" style="margin:0" data-reveal="tilt">
-      <img src="../assets/post-siemens.webp" alt="Screenshot of a LinkedIn post about Siemens and NVIDIA bringing agentic AI to semiconductor design, with its infographic cover, 47 reactions and 2,572 impressions" width="552" height="1062">
-      <figcaption class="cap"><span>Siemens ✕ NVIDIA<small>2,572 impressions · 47 reactions · 5 reposts</small></span></figcaption>
-    </figure>
-  </div>
-  <div class="stats">
-    <div class="stat paper" data-reveal="tilt"><b><span data-count="4500" data-comma>4,500</span></b><p>members reached in the 90-day window.</p></div>
-    <div class="stat lime" data-reveal="tilt"><b>+229%</b><p>impressions vs. the prior 90 days.</p></div>
-    <div class="stat coral" data-reveal="tilt"><b>33%</b><p>of the audience works at companies with 10,001+ employees; 31% are senior-level.</p></div>
-  </div>
-  <p class="fine" data-reveal="up">Per-post counts are lifetime figures as the posts display them; the 90-day and audience figures are from LinkedIn analytics. Both read November 2, 2026.</p>
-</section>
-
-<section class="band ink">
-  <h2 class="h2" data-reveal="up">Numbers, with their sources</h2>
-  <div class="stats">
-    <div class="stat lime" data-reveal="tilt"><b><span data-count="7694" data-comma>7,694</span></b><p>organic impressions on the showcase page, January 1 to October 28, 2026.</p><p class="fine">Showcase analytics export, 2026 year to date</p></div>
-    <div class="stat coral" data-reveal="tilt"><b><span data-count="92" data-suffix="%">92%</span></b><p>of the persona account’s 8,331 impressions in 90 days came from outside its network. 230 followers.</p><p class="fine">LinkedIn analytics, read November 2, 2026</p></div>
-    <div class="stat paper" data-reveal="tilt"><b><span data-count="48">48</span></b><p>showcase followers, 31 of them gained in 2026.</p><p class="fine">Showcase analytics export, 2026 year to date</p></div>
-  </div>
 </section>
 
 <section class="band">

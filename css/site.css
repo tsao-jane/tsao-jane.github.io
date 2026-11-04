@@ -191,7 +191,7 @@ html.js .wipe{display:block}
 .sub-hero .kicker{display:inline-block;background:var(--ink);color:var(--lime);font-weight:700;font-size:15px;padding:7px 14px;border-radius:999px;margin:48px 0 18px;transform:rotate(-2deg)}
 .sub-hero h1{font:400 clamp(40px,6.4vw,96px)/1 "Dela",sans-serif;letter-spacing:-.03em;margin:0 0 18px;max-width:11em;position:relative;z-index:1}
 .sub-hero h1 .hl{background:linear-gradient(transparent 55%,var(--lime) 55%);padding:0 .08em}
-.sub-hero .lede{font-size:clamp(20px,1.7vw,24px);max-width:34em;margin:0 0 26px;position:relative;z-index:1}
+.sub-hero .lede{font-size:clamp(20px,1.7vw,24px);max-width:none;margin:0 0 26px;position:relative;z-index:1}
 .sub-hero .hand{font-size:clamp(24px,2.2vw,30px);color:var(--violet);margin:0 0 30px;position:relative;z-index:1}
 .sub-hero .side{position:absolute;right:var(--gutter);top:40px;width:clamp(110px,16vw,240px)}
 .facts{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 8px;padding:0;list-style:none;position:relative;z-index:1}
@@ -248,12 +248,24 @@ html.js .wipe{display:block}
 .list li a{font-weight:700}
 .list li .role{font-size:14px;background:var(--lime);padding:4px 10px;border-radius:999px;white-space:nowrap;font-weight:700}
 
+/* ---------- receipts + achievement numbers ---------- */
+.receipt-row{display:grid;grid-template-columns:minmax(0,660px) minmax(0,1fr);gap:48px;align-items:center;margin-top:26px}
+.achnum{margin:0 0 20px}
+.achnum b{display:block;font:400 clamp(40px,4.2vw,62px)/1 "Dela",sans-serif;letter-spacing:-.02em;margin-bottom:5px;font-variant-numeric:tabular-nums}
+.achnum p{margin:0;font-size:17px}
+.receipts-mini{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.receipts-mini a{display:block;background:#fff;border:2.5px solid var(--ink);border-radius:22px;padding:10px;text-decoration:none;color:var(--ink);box-shadow:0 8px 0 -2px var(--ink);transition:transform .25s var(--ease-pop)}
+.receipts-mini a:hover{transform:rotate(-1deg) translateY(-4px)}
+.receipts-mini img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;background:#fff;border-radius:14px}
+.receipts-mini .cap{display:block;font-weight:700;font-size:16px;padding:10px 8px 6px}
+.receipts-mini .cap small{display:block;font-weight:500;opacity:.75;font-size:14px;margin-top:2px}
+
 /* ---------- check-in quotes ---------- */
 .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:22px;align-items:start}
 .qnote{margin:0}
 .qnote .bub{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;font-family:"Gochi","Onest",cursive;font-size:20px;line-height:1.35;box-shadow:0 5px 0 rgba(16,41,79,.25)}
 .qnote .bub::after{content:"";position:absolute;left:32px;bottom:-13px;width:22px;height:22px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
-.qnote.q2 .bub{background:var(--paper)}.qnote.q2 .bub::after{background:var(--paper)}
+.qnote.q2 .bub{background:#FFE3EA}.qnote.q2 .bub::after{background:#FFE3EA}
 .qnote.q3 .bub{background:#FFF7E0}.qnote.q3 .bub::after{background:#FFF7E0}
 .qnote .bub p{margin:0}
 .qnote .by{display:flex;align-items:center;gap:9px;font-family:"Onest",sans-serif;font-size:14.5px;font-weight:700;margin-top:18px;padding-left:14px}
@@ -321,6 +333,7 @@ html.js .reveal-wait{visibility:visible}
   .band{padding:52px 16px}
   .next{padding:36px 16px}
   .sticker.hide-sm,.spark.hide-sm,.squig.hide-sm{display:none}
+  .receipt-row,.receipts-mini{grid-template-columns:1fr}
 }
 @media (max-width:420px){.flow{grid-template-columns:1fr}}
 
