@@ -248,6 +248,18 @@ html.js .wipe{display:block}
 .list li a{font-weight:700}
 .list li .role{font-size:14px;background:var(--lime);padding:4px 10px;border-radius:999px;white-space:nowrap;font-weight:700}
 
+/* ---------- check-in quotes ---------- */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:22px;align-items:start}
+.qnote{margin:0}
+.qnote .bub{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 22px;font-family:"Gochi","Onest",cursive;font-size:20px;line-height:1.35;box-shadow:0 5px 0 rgba(16,41,79,.25)}
+.qnote .bub::after{content:"";position:absolute;left:32px;bottom:-13px;width:22px;height:22px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.qnote.q2 .bub{background:var(--paper)}.qnote.q2 .bub::after{background:var(--paper)}
+.qnote.q3 .bub{background:#FFF7E0}.qnote.q3 .bub::after{background:#FFF7E0}
+.qnote .bub p{margin:0}
+.qnote .by{display:flex;align-items:center;gap:9px;font-family:"Onest",sans-serif;font-size:14.5px;font-weight:700;margin-top:18px;padding-left:14px}
+.qnote .by i{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;color:#fff;font-style:normal;font-size:14px;border:2.5px solid var(--ink);font-family:"Onest"}
+@media (max-width:860px){.quotes{grid-template-columns:1fr;gap:26px}}
+
 /* ---------- about ---------- */
 .tl{list-style:none;margin:36px 0 0;padding:0 0 0 34px;position:relative}
 .tl::before{content:"";position:absolute;left:10px;top:12px;bottom:12px;width:4px;border-radius:4px;background:repeating-linear-gradient(var(--violet) 0 12px,transparent 12px 20px)}

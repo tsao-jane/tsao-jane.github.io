@@ -5,54 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Jane Tsao — portfolio</title>
-<meta name="description" content="Jane Tsao: bilingual B2B marketer (English and Mandarin) for industrial tech. LinkedIn, landing pages, product data and AI workshops. Moving to Canada, available February 2027.">
+<meta name="description" content="Jane Tsao's one-page portfolio: LinkedIn work, live landing pages, a company-wide AI workshop, and how she uses AI. Available in Canada from February 2027.">
 <link rel="icon" href="../assets/stickers/mascot.webp" type="image/webp">
 <link rel="stylesheet" href="../css/site.css">
 <style>
 .hero .maple{right:calc(var(--gutter) - 10px);bottom:118px;width:clamp(90px,10vw,150px);z-index:3}
-.hero .sp1{left:32%;top:62px;width:34px}.hero .sp2{right:26%;top:70px;width:26px}.hero .sp3{left:46%;bottom:160px;width:22px}
-.hero .sq1{left:-20px;top:40%;width:180px;opacity:.5}
-.bubble{display:inline-block;width:84px;vertical-align:middle;margin-left:10px;transform:rotate(6deg);transition:transform .3s var(--ease-pop)}
-.bubble:hover{transform:rotate(-4deg) scale(1.1)}
-.how-head{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:30px;align-items:end;position:relative;z-index:2}
-.how .mega{right:36%;top:58px;width:110px}
-.how .mag{position:absolute;right:-18px;top:-30px;width:96px;z-index:2;pointer-events:none}
-.how .mag img{filter:drop-shadow(0 6px 0 rgba(23,18,58,.18))}
-.work .easel{right:var(--gutter);top:70px;width:120px}
-.work .sp4{left:40%;top:60px;width:30px}
-.nums-wrap{position:relative}
-.nums-wrap .chart{right:calc(var(--gutter) + 46px);left:auto;top:88px;width:104px;z-index:3}
-footer .plane{right:var(--gutter);top:40px;width:clamp(140px,18vw,260px)}
-.how .st-trace{right:6%;bottom:6px;width:150px;transform:rotate(8deg)}
-.nums-wrap .st-read{right:36px;top:-60px;width:128px;transform:rotate(10deg)}
-.how-head .kicker{display:inline-block;background:var(--ink);color:var(--lime);font-weight:700;font-size:15px;padding:7px 14px;border-radius:999px;margin:0 0 16px;transform:rotate(-2deg)}
-.nums-head{padding:0 var(--gutter);margin:0 0 30px}
-.nums-head .sub{margin-bottom:0}
+.hero .sp1{left:32%;top:62px;width:34px}.hero .sp2{right:26%;top:70px;width:26px}
+.bubble{display:inline-block;width:84px;vertical-align:middle;margin-left:10px;transform:rotate(6deg)}
+.band .h2{margin-bottom:4px}
+.band .sub{margin-bottom:30px}
+.covers .gallery{grid-template-columns:repeat(3,1fr)}
+.receipt-row{display:grid;grid-template-columns:minmax(0,660px) minmax(0,1fr);gap:48px;align-items:center;margin-top:26px}
+.achnum{margin:0 0 20px}
+.achnum b{display:block;font:400 clamp(40px,4.2vw,62px)/1 "Dela",sans-serif;letter-spacing:-.02em;margin-bottom:5px;font-variant-numeric:tabular-nums}
+.achnum p{margin:0;font-size:17px}
+.receipts-mini{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.receipts-mini a{display:block;background:#fff;border-radius:22px;padding:10px;text-decoration:none;color:var(--ink);box-shadow:0 8px 0 -2px var(--ink);transition:transform .25s var(--ease-pop)}
+.receipts-mini a:hover{transform:rotate(-1deg) translateY(-4px)}
+.receipts-mini img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;background:#fff;border-radius:14px}
+.receipts-mini .cap{display:block;font-weight:700;font-size:16px;padding:10px 8px 6px}
+.receipts-mini .cap small{display:block;font-weight:500;opacity:.75;font-size:14px;margin-top:2px}
+.statline{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0;padding:0;list-style:none}
+.statline li{background:#fff;color:var(--ink);border:2.5px solid var(--ink);border-radius:999px;padding:12px 20px;font-weight:700;font-size:19px;box-shadow:0 4px 0 var(--ink)}
+.statline li em{font-style:normal;color:#C2457A;font-family:"Dela",sans-serif;font-weight:400;font-size:1.3em;vertical-align:-1px;margin-right:2px}
+.band.violet .statline li{box-shadow:0 3px 0 rgba(0,0,0,.35)}
+.wsgrid{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:40px;align-items:center}
+.wsgrid .shotcard{cursor:default}
+.bigstat{font:400 clamp(44px,5vw,76px)/1 "Dela",sans-serif;letter-spacing:-.02em;margin:0 0 10px}
+.loop4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 0;padding:0;list-style:none;counter-reset:f}
+.loop4 li{counter-increment:f;background:#fff;border-radius:22px;padding:18px 18px 20px;box-shadow:0 8px 0 -2px var(--ink);font-size:16px;line-height:1.35}
+.loop4 li::before{content:counter(f);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--coral);font:400 16px/1 "Dela",sans-serif;margin-bottom:10px}
+.loop4 li b{display:block;font:400 18px/1.15 "Dela",sans-serif;font-weight:400;margin-bottom:5px}
+.howgrid{display:grid;grid-template-columns:1fr 1.5fr;gap:34px;align-items:start;margin-top:8px}
+.savecard{background:var(--coral);border-radius:28px;padding:26px 28px;box-shadow:0 10px 0 -2px var(--ink)}
+.savecard p{margin:0}
+.savecard p.bigstat{margin:0 0 14px;line-height:1.04}
+.savecard .fine{opacity:.8}
 @media (max-width:860px){
   .hero .maple{right:-6px;bottom:auto;top:-16px;width:84px}
-  .hero .sp1{left:6%;top:22px}.hero .sp2{right:30%;top:14px}.hero .sp3{display:none}
-  .how-head{grid-template-columns:1fr}.how-head .mascot{width:150px;margin:6px 0 0 auto}
-  .how .mega{right:8px;top:8px;width:72px}
-  .how .mag{width:70px;right:-6px;top:-22px}
-  .work .easel{width:80px;top:14px;right:10px}
-  .nums-wrap .chart{display:none}
-  footer .plane{position:relative;right:auto;top:auto;width:150px;margin:0 0 10px auto}
-  footer .sq2{display:none}
-  .bubble{width:64px}
+  .hero .sp1{left:6%;top:22px}.bubble{width:64px}
+  .covers .gallery{grid-template-columns:1fr}
+  .receipts-mini,.wsgrid,.howgrid,.receipt-row{grid-template-columns:1fr}
+  .loop4{grid-template-columns:1fr 1fr}
 }
-</style>
-<style>
-.mini-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;position:relative;z-index:1}
-.mcard{display:flex;gap:18px;align-items:center;background:var(--paper);color:var(--ink);border-radius:26px;padding:14px 18px 14px 14px;text-decoration:none;transition:transform .25s var(--ease-pop),box-shadow .25s;box-shadow:0 0 0 0 var(--ink)}
-.mcard:hover{transform:rotate(-1deg) translateY(-4px);box-shadow:0 8px 0 0 var(--ink)}
-.mcard .mthumb{width:150px;aspect-ratio:16/10;border-radius:16px;object-fit:cover;object-position:top left;flex:none;background:#fff}
-.sheetgrid-mini{display:grid;grid-template-rows:1fr 1fr 1fr;place-items:center start;padding:10px 14px;gap:4px}
-.sheetgrid-mini img{height:13px;width:auto;max-width:100px}
-.mcard .mtxt{flex:1;min-width:0}
-.mcard .mtxt b{display:block;font:400 19px/1.15 "Dela",sans-serif;margin-bottom:4px}
-.mcard .mtxt small{font-size:14.5px;opacity:.8}
-.mcard .go{width:44px;height:44px;flex:none}
-@media (max-width:860px){.mini-cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -63,14 +58,9 @@ footer .plane{right:var(--gutter);top:40px;width:clamp(140px,18vw,260px)}
     <span class="logo-eyes" aria-hidden="true"><span class="eye"><span class="pupil"></span></span><span class="eye"><span class="pupil"></span></span></span>
     <a class="chip" href="mailto:tsaojane615@yahoo.com">tsaojane615@yahoo.com</a>
   </div>
-
   <div class="spark sp1 twinkle" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 2c2 10 8 16 18 18-10 2-16 8-18 18-2-10-8-16-18-18 10-2 16-8 18-18z" fill="currentColor" stroke="#10294F" stroke-width="3" stroke-linejoin="round"/></svg></div>
   <div class="spark sp2 lime twinkle d2" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 2c2 10 8 16 18 18-10 2-16 8-18 18-2-10-8-16-18-18 10-2 16-8 18-18z" fill="currentColor" stroke="#10294F" stroke-width="3" stroke-linejoin="round"/></svg></div>
-  <div class="spark sp3 violet twinkle d3" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 2c2 10 8 16 18 18-10 2-16 8-18 18-2-10-8-16-18-18 10-2 16-8 18-18z" fill="currentColor" stroke="#10294F" stroke-width="3" stroke-linejoin="round"/></svg></div>
-  <div class="squig sq1 hide-sm" aria-hidden="true" data-parallax="0.15"><svg viewBox="0 0 200 40"><path d="M4 20c16-24 32 24 48 0s32-24 48 0 32 24 48 0 32-24 48 0"/></svg></div>
-
   <div class="name" role="img" aria-label="Jane Tsao">jane tsao</div>
-
   <div class="under">
     <div>
       <h1>I make hard-to-explain products easier to market.</h1>
@@ -102,64 +92,130 @@ footer .plane{right:var(--gutter);top:40px;width:clamp(140px,18vw,260px)}
 </header>
 
 <div class="tick" aria-hidden="true"><div class="track">
-  <span>LinkedIn</span><i class="dot"></i><span>Landing pages</span><i class="dot"></i><span>Product data</span><i class="dot"></i><span>AI workshops</span><i class="dot"></i><span>English + 中文</span><i class="dot"></i><span>B2B tech</span><i class="dot"></i>
-  <span>LinkedIn</span><i class="dot"></i><span>Landing pages</span><i class="dot"></i><span>Product data</span><i class="dot"></i><span>AI workshops</span><i class="dot"></i><span>English + 中文</span><i class="dot"></i><span>B2B tech</span><i class="dot"></i>
-  <span>LinkedIn</span><i class="dot"></i><span>Landing pages</span><i class="dot"></i><span>Product data</span><i class="dot"></i><span>AI workshops</span><i class="dot"></i><span>English + 中文</span><i class="dot"></i><span>B2B tech</span><i class="dot"></i>
-  <span>LinkedIn</span><i class="dot"></i><span>Landing pages</span><i class="dot"></i><span>Product data</span><i class="dot"></i><span>AI workshops</span><i class="dot"></i><span>English + 中文</span><i class="dot"></i><span>B2B tech</span><i class="dot"></i>
+  <span>LinkedIn</span><i class="dot"></i><span>Landing pages</span><i class="dot"></i><span>AI workshops</span><i class="dot"></i><span>English + 中文</span><i class="dot"></i><span>B2B tech</span><i class="dot"></i><span>How I use AI</span><i class="dot"></i>
+  <span>LinkedIn</span><i class="dot"></i><span>Landing pages</span><i class="dot"></i><span>AI workshops</span><i class="dot"></i><span>English + 中文</span><i class="dot"></i><span>B2B tech</span><i class="dot"></i><span>How I use AI</span><i class="dot"></i>
+  <span>LinkedIn</span><i class="dot"></i><span>Landing pages</span><i class="dot"></i><span>AI workshops</span><i class="dot"></i><span>English + 中文</span><i class="dot"></i><span>B2B tech</span><i class="dot"></i><span>How I use AI</span><i class="dot"></i>
 </div></div>
 
 <main id="main">
-<section class="work" id="work">
-  <div class="sticker easel hoverable float alt hide-sm" data-parallax="0.25"><img src="../assets/stickers/easel.webp" alt="" width="597" height="640"></div>
-  <div class="spark sp4 lime twinkle hide-sm" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 2c2 10 8 16 18 18-10 2-16 8-18 18-2-10-8-16-18-18 10-2 16-8 18-18z" fill="currentColor" stroke="#10294F" stroke-width="3" stroke-linejoin="round"/></svg></div>
-  <h2 class="h2" data-reveal="up">Work you can open</h2>
-  <p class="sub hand" data-reveal="up">real pages, real posts, real numbers</p>
-  <div class="cards">
-    <a class="card" href="../work/linkedin.html" data-reveal="tilt">
-      <img class="shot" src="../assets/cover-moxa.webp" alt="A LinkedIn cover I made: an industrial edge computer in front of battery storage cabinets at sunset" width="1200" height="675">
-      <span class="tag">LinkedIn</span>
-      <div class="row"><div><h3>LinkedIn for an industrial-computing brand</h3><p>Application stories for industrial buyers. 7,694 organic impressions on the showcase page this year.</p></div><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+
+<section class="band violet covers" id="linkedin">
+  <h2 class="h2" data-reveal="up">LinkedIn</h2>
+  <p class="hand sub" data-reveal="up">I run both accounts, end to end</p>
+  <p class="prose" style="margin:0 0 26px;max-width:none" data-reveal="up">I own the company’s industrial-computing showcase page — research, copy, covers, scheduling, and a read-back check after every post. These three covers are mine.</p>
+  <div class="gallery">
+    <a class="shotcard" href="https://www.linkedin.com/showcase/neteon-ipc" rel="noopener" data-reveal="tilt">
+      <img src="../assets/cover-moxa.webp" alt="Post cover: Local Energy Management for Cabinet BESS, Moxa BXP-A101 in front of battery storage cabinets" width="1200" height="675">
+      <span class="cap"><span>Energy storage<small>Cabinet BESS, Moxa BXP-A101</small></span></span>
     </a>
-    <a class="card" href="../work/landing-pages.html" data-reveal="tilt">
-      <img class="shot" src="../assets/lp-di1200.webp" alt="The live Cincoze DI-1200 landing page on neteon.net" width="1200" height="750">
-      <span class="tag">Webflow</span>
-      <div class="row"><div><h3>Nine live landing pages</h3><p>Layout, imagery and icons in Webflow. The copy side is now handing over to me.</p></div><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+    <a class="shotcard" href="https://www.linkedin.com/showcase/neteon-ipc" rel="noopener" data-reveal="tilt">
+      <img src="../assets/cover-asus.webp" alt="Post cover: From Camera Feeds to Plant Alerts, ASUS IoT PE1100N in a refinery" width="1200" height="675">
+      <span class="cap"><span>Edge AI<small>Plant monitoring, ASUS IoT PE1100N</small></span></span>
     </a>
-          </div>
-  <div class="mini-cards">
-    <a class="mcard" href="../work/product-data.html">
-      <span class="mthumb sheetgrid-mini" aria-hidden="true"><img src="../assets/logos/moxa.svg" alt=""><img src="../assets/logos/cincoze.svg" alt=""><img src="../assets/logos/asus-iot.png" alt=""></span>
-      <span class="mtxt"><b>From a week to a day per vendor update</b><small>An AI-assisted import pipeline for five vendor lines.</small></span>
-      <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+    <a class="shotcard" href="https://www.linkedin.com/showcase/neteon-ipc" rel="noopener" data-reveal="tilt">
+      <img src="../assets/cover-mic.webp" alt="Post cover: Inside an Airport E-Gate, Advantech MIC-770 V3 beside border-control gates" width="1200" height="675">
+      <span class="cap"><span>Border control<small>Airport e-gates, Advantech MIC-770 V3</small></span></span>
     </a>
-    <a class="mcard" href="../work/ai-workshop.html">
-      <img class="mthumb" src="../assets/deck3.webp" alt="Session 3 deck opening slide">
-      <span class="mtxt"><b>A company-wide AI workshop</b><small>Three live sessions I taught · 4.5/5 in check-ins.</small></span>
-      <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-    </a>
+  </div>
+  <p class="prose" style="margin:30px 0 0;max-width:none" data-reveal="up">I also created and run a persona account covering industrial-AI news. It has 230 followers, yet its posts travel on relevance — screenshots as LinkedIn shows them, account name cropped. Tap to enlarge.</p>
+  <div class="receipt-row">
+    <div class="receipts-mini">
+      <a href="../assets/post-caterpillar.webp" target="_blank" rel="noopener" data-reveal="tilt">
+        <img src="../assets/post-caterpillar.webp" alt="Screenshot of the Caterpillar × FieldAI post with 2,601 impressions and 26 reactions" width="552" height="1360">
+        <span class="cap">Caterpillar ✕ FieldAI<small>2,601 impressions · 26 reactions · 1 repost</small></span>
+      </a>
+      <a href="../assets/post-siemens.webp" target="_blank" rel="noopener" data-reveal="tilt">
+        <img src="../assets/post-siemens.webp" alt="Screenshot of the Siemens × NVIDIA post with 2,572 impressions and 47 reactions" width="552" height="1062">
+        <span class="cap">Siemens ✕ NVIDIA<small>2,572 impressions · 47 reactions · 5 reposts</small></span>
+      </a>
+    </div>
+    <div class="ach" data-reveal="right">
+      <p class="hand" style="font-size:25px;color:var(--lime);margin:0 0 6px">what it adds up to</p>
+      <div class="achnum"><b style="color:var(--lime)">8,331</b><p>impressions in 90 days on the persona account</p></div>
+      <div class="achnum"><b style="color:var(--coral)">92%</b><p>of that reach came from outside its network</p></div>
+      <div class="achnum"><b style="color:#fff">7,694</b><p>organic impressions on the showcase page, 2026 YTD</p></div>
+      <p class="fine" style="margin-top:16px">LinkedIn analytics, read November 2, 2026. Per-post counts as displayed on the posts.</p>
+    </div>
   </div>
 </section>
 
+<section class="band" id="pages">
+  <h2 class="h2" data-reveal="up">Landing pages</h2>
+  <p class="hand sub" style="color:var(--violet)" data-reveal="up">click any card — these are live on neteon.net</p>
+  <div class="gallery">
+    <a class="shotcard" href="https://www.neteon.net/landing/asus-iot-pe1000u-fanless-din-rail-edge-ai-pc-neteon" rel="noopener" data-reveal="tilt">
+      <img src="../assets/lp/lp-pe1000u.webp" alt="ASUS IoT PE1000U Series landing page" width="1000" height="625">
+      <span class="cap"><span>ASUS IoT PE1000U<small>Sep 2026</small></span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+    </a>
+    <a class="shotcard" href="https://www.neteon.net/landing/cincoze-panel-pc" rel="noopener" data-reveal="tilt">
+      <img src="../assets/lp/lp-panel.webp" alt="Cincoze High Performance Panel PC landing page" width="1000" height="625">
+      <span class="cap"><span>Cincoze Panel PC<small>Aug 2026</small></span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+    </a>
+    <a class="shotcard" href="https://www.neteon.net/landing/cincoze-di-1200-series" rel="noopener" data-reveal="tilt">
+      <img src="../assets/lp/lp-di1200.webp" alt="Cincoze DI-1200 Series landing page" width="1000" height="625">
+      <span class="cap"><span>Cincoze DI-1200<small>Aug 2026</small></span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+    </a>
+  </div>
+  <p class="prose" style="margin:26px 0 0;max-width:none" data-reveal="up">I built 9 landing pages in Webflow for four vendor lines — layout, imagery and icons; these three are the ones I did most of. The copy side is now handing over to me: structure, messaging and CTAs on new pages are mine.</p>
+</section>
 
-<div class="nums-wrap" id="results">
-  <div class="sticker chart hoverable float alt" data-parallax="0.2"><img src="../assets/stickers/chart.webp" alt="" width="640" height="572"></div>
-  <div class="shapetag st-read hide-sm" aria-hidden="true">
-    <svg viewBox="0 0 220 220"><path d="M110.0,48.0 A42,42 0 0 1 153.8,66.2 A42,42 0 0 1 172.0,110.0 A42,42 0 0 1 153.8,153.8 A42,42 0 0 1 110.0,172.0 A42,42 0 0 1 66.2,153.8 A42,42 0 0 1 48.0,110.0 A42,42 0 0 1 66.2,66.2 A42,42 0 0 1 110.0,48.0 Z" fill="var(--coral)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/><text x="110" y="105" text-anchor="middle" font-family="Dela, sans-serif" font-size="20" fill="var(--ink)">READ IT<tspan x="110" dy="25">BACK</tspan></text></svg>
+<section class="band lime" id="workshop">
+  <h2 class="h2" data-reveal="up">A company-wide AI workshop</h2>
+  <p class="hand sub" data-reveal="up">planned, taught and run by me</p>
+  <div class="wsgrid">
+    <figure class="shotcard" style="margin:0" data-reveal="tilt">
+      <img src="../assets/lp/deck3.webp" alt="Opening slide of the Session 3 deck: Your AI toolkit" width="1000" height="625">
+      <figcaption class="cap"><span>Session 3 deck<small>Built as a web page, 21 slides — internal material, happy to walk through it in an interview</small></span></figcaption>
+    </figure>
+    <div data-reveal="right">
+      <p class="bigstat">4.5/5</p>
+      <p class="prose">average usefulness in attendee check-ins. I planned and taught all three live sessions myself, for the whole company across the Taiwan and US teams, and built the QR check-in form that collected the feedback below.</p>
+    </div>
   </div>
-  <div class="nums-head">
-    <h2 class="h2" data-reveal="up">Numbers I stand behind</h2>
-    <p class="sub hand" style="color:var(--violet)" data-reveal="up">every one has a source</p>
+  <p class="hand" style="font-size:25px;color:var(--ink);margin:36px 0 0" data-reveal="up">what colleagues wrote in the check-in form afterwards</p>
+  <div class="quotes">
+    <blockquote class="qnote" data-reveal="tilt"><div class="bub"><p>“I used AI to polish the daily outgoing emails, modifying the writing style to be more polite and formalized when following up with accounts that have delayed payments.”</p></div><span class="by"><i style="background:#C2457A">S</i>Sherry · Session 1 check-in</span></blockquote>
+    <blockquote class="qnote q2" data-reveal="tilt"><div class="bub"><p>“I used a Project to read multiple datasheet and output filters file to import”</p></div><span class="by"><i style="background:var(--violet)">H</i>Hans · Session 2 check-in</span></blockquote>
+    <blockquote class="qnote q3" data-reveal="tilt"><div class="bub"><p>“I used cowork for item price check and availability for the customer BOM”</p></div><span class="by"><i style="background:#2E7D5B">G</i>Geoffrey · Session 3 check-in</span></blockquote>
   </div>
-  <section class="nums" aria-label="Results">
-    <div class="num n1" data-reveal="tilt"><b><span data-count="92" data-suffix="%">92%</span></b><p>of a persona account’s 8,331 impressions in 90 days came from outside its network.</p><p class="fine">LinkedIn analytics, read Nov 2, 2026</p></div>
-    <div class="num n2" data-reveal="tilt"><b>1 week → 1 day</b><p>for each vendor product update, across five vendor lines.</p><p class="fine">My own estimate</p></div>
-    <div class="num n3" data-reveal="tilt"><b><span data-count="4.5" data-decimals="1" data-suffix="/5">4.5/5</span></b><p>average usefulness of my AI workshop, in attendee check-ins.</p><p class="fine">Check-in form, read Oct 5, 2026</p></div>
-  </section>
-</div>
+</section>
+
+<section class="band" id="how">
+  <h2 class="h2" data-reveal="up">How I use AI</h2>
+  <p class="hand sub" style="color:var(--violet)" data-reveal="up">the same loop, whatever the task</p>
+  <div class="howgrid">
+    <div class="savecard" data-reveal="left">
+      <p class="bigstat">1 week → 1 day</p>
+      <p>for each vendor product update across five vendor lines, feeding a 5,500+ product catalog.</p>
+      <p class="fine" style="margin-top:10px">My own estimate — and I’ll show you how I check it.</p>
+    </div>
+    <div>
+      <ol class="loop4" data-reveal="up">
+        <li><b>I set the rules</b>Required fields, approved sources, what counts as an exception.</li>
+        <li><b>AI does the repetitive part</b>Collecting, structuring, drafting, formatting.</li>
+        <li><b>I review before it ships</b>Spot-checks against the source; exceptions by hand.</li>
+        <li><b>The method gets saved</b>So the next run starts where this one ended.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band white" id="toolkit">
+  <h2 class="h2" data-reveal="up">Toolkit</h2>
+  <p class="hand sub" style="color:var(--violet)" data-reveal="up">what the work above was made with</p>
+  <p class="toolhead" data-reveal="up">AI I work with</p>
+  <ul class="tools" data-reveal="up">
+    <li class="hi">Claude · Cowork + Skills</li><li>Claude Code</li><li>ChatGPT</li><li>Codex</li><li>Higgsfield</li><li>ego</li><li>Notion AI</li>
+  </ul>
+  <p class="toolhead" data-reveal="up">The stack it plugs into</p>
+  <ul class="tools" data-reveal="up">
+    <li>Webflow</li><li>NetSuite</li><li>BigCommerce</li><li>HubSpot</li><li>Apollo</li><li>Canva</li>
+  </ul>
+</section>
 </main>
 
 <footer id="contact">
-  <div class="sticker plane hoverable float" data-parallax="0.18"><img src="../assets/stickers/mascot-plane.webp" alt="" width="640" height="616"></div>
+  <div class="sticker plane hoverable float" data-parallax="0.18" style="right:var(--gutter);top:40px;width:clamp(140px,18vw,260px)"><img src="../assets/stickers/mascot-plane.webp" alt="" width="640" height="616"></div>
   <h2 class="h2" data-reveal="up">Let’s talk before I land.</h2>
   <p data-reveal="up">Canadian citizen, currently in Taipei, available from February 1, 2027.</p>
   <div class="links" data-reveal="up">
@@ -167,10 +223,10 @@ footer .plane{right:var(--gutter);top:40px;width:clamp(140px,18vw,260px)}
     <a class="btn ghost" href="https://www.linkedin.com/in/jane-t-042913220" rel="noopener">LinkedIn profile <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
     <a class="btn ghost" href="../about.html">More about me</a>
   </div>
-  <p class="mini">Hand-built with HTML, CSS and a little GSAP. Stickers drawn with an AI image tool and checked by me. Every number on this site has a source.</p>
+  <p class="mini">Hand-built with HTML, CSS and a little GSAP. Stickers drawn with an AI image tool and checked by me. Every number on this page has a source.</p>
 </footer>
 
-<nav class="pill" aria-label="Page"><a href="#top">Home</a><a href="#work">Work</a><a href="../about.html">About</a><a href="#contact">Contact</a></nav>
+<nav class="pill" aria-label="Page"><a href="#top">Top</a><a href="#linkedin">LinkedIn</a><a href="#pages">Pages</a><a href="#workshop">Workshop</a><a href="#how">How</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a></nav>
 
 <script src="../vendor/gsap.min.js"></script>
 <script src="../vendor/ScrollTrigger.min.js"></script>
